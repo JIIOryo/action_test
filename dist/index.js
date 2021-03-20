@@ -423,10 +423,12 @@ const core = __nccwpck_require__(186);
 // }
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const newTag = core.getInput('ref');
+        const inp = core.getInput('inp');
         // const preTag = await execute('/bin/bash -c "git tag --sort=-creatordate | sed -n 2p"')
         // const summary = await execute(`git log --oneline --pretty=tformat:"%h %s" ${preTag.trim()}..${newTag}`)
-        core.setOutput("hoge", 'hoge');
+        console.log(`This is ${inp}`);
+        const outp = 'outp';
+        core.setOutput("hoge", outp);
     }
     catch (error) {
         core.setFailed(error.message);
