@@ -1,0 +1,13 @@
+name: Sample Name
+description: This is description!
+inputs:
+  ref:
+    description: ref description
+    required: true
+    default: please set ${{ github.ref }}
+outputs:
+  summary:
+    description: output summary description
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
