@@ -1,13 +1,13 @@
 name: Sample Name
 description: This is description!
 inputs:
-  ref:
-    description: ref description
+  inp:
+    description: input value
     required: true
-    default: please set ${{ github.ref }}
+    default: DEFAULTだよー
 outputs:
-  summary:
-    description: output summary description
+  outp:
+    description: output desu
 runs:
   using: 'node12'
   main: 'dist/index.js'
