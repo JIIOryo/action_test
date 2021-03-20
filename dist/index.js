@@ -407,25 +407,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core = __nccwpck_require__(186);
-// const execute = async (command: string): Promise<string> => {
-//     let output = ''
-//     const options: ExecOptions = {}
-//     options.listeners = {
-//         stdout: (data: Buffer) => {
-//             output += data.toString()
-//         },
-//         stderr: (data: Buffer) => {
-//             console.error(data)
-//         }
-//     }
-//     await exec.exec(command, null, options)
-//     return output
-// }
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const inp = core.getInput('inp');
-        // const preTag = await execute('/bin/bash -c "git tag --sort=-creatordate | sed -n 2p"')
-        // const summary = await execute(`git log --oneline --pretty=tformat:"%h %s" ${preTag.trim()}..${newTag}`)
         console.log(`This is ${inp}`);
         const outp = 'outp';
         core.setOutput("hoge", outp);
